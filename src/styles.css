@@ -1,0 +1,146 @@
+/* styles.css */
+
+/* Colors */
+:root {
+  --color-primary: #4c51bf;
+  --color-secondary: #f3f4f6;
+  --color-accent: #6b7280;
+  --color-label: #ff9f00;
+  /* Custom color for label badges */
+  --color-band: #00a3e1;
+  /* Custom color for band badges */
+}
+
+/* Panel Styles */
+.panel {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Badge Styles */
+.record-label-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  background-color: var(--color-label);
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-secondary);
+  padding: 20px;
+  margin: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Record Labels */
+.record-label-container {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.record-label-panel {
+  padding: 20px;
+}
+
+.record-label-row {
+  display: flex;
+  flex-direction: column;
+  /* Stack rows vertically */
+  margin-bottom: 10px;
+}
+
+.record-label-info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.record-label {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-label);
+}
+
+.record-label-badge {
+  display: block;
+  /* Display as block element */
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+}
+
+.band-container {
+  margin-left: 20px;
+}
+
+.band-info {
+  display: flex;
+  align-items: center;
+}
+
+.band {
+  margin: 10px 0 10px 0;
+  font-size: 1.2rem;
+  color: var(--color-band);
+}
+
+.band-badge {
+  display: block;
+  margin: 0px 0 0 5px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--color-band);
+  border-radius: 4px;
+}
+
+.festivals {
+  margin-left: 20px;
+}
+
+.festival {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-accent);
+}
+
+/* Loading Message */
+.loading-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #ffcccc;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
