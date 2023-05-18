@@ -33,6 +33,4 @@ Upon running the application, you will see the record labels displayed along wit
 
 ## API
 
-The project uses an API endpoint to fetch the data:
-
-- [https://eacp.energyaustralia.com.au/codingtest/api/v1/festivals](https://eacp.energyaustralia.com.au/codingtest/api/v1/festivals)
+The project uses an external API endpoint to fetch the data
