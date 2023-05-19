@@ -1,6 +1,6 @@
 # Labels, Bands, Festivals
 
-This project displays band record labe at the top level, below that it list out all bands under their management, and below that it displays which festivals they've attended, if any. All entries are sorted alphabetically.
+This project displays band record label at the top level, below that it list out all bands under their management, and below that it displays which festivals they've attended, if any. All entries are sorted alphabetically.
 
 ## Description
 
