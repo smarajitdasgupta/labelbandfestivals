@@ -62,16 +62,14 @@ const App: React.FC = () => {
           <h3 className="band">{band.name}</h3>
           <span className="band-badge">Music Band</span>
         </div>
-        {band.name && (
-          <div className="festivals">
-            {getFestivalsForBand(band.name).map((festival) => (
-              <h4 className="festival" key={`${band.name}-${festival}`} >
-                {festival}
-              </h4>
-            ))}
-          </div>
-        )}
-      </div >
+        <div className="festivals">
+          {getFestivalsForBand(band.name).map((festival) => (
+            <h4 className="festival" key={`${band.name}-${festival}`}>
+              {festival}
+            </h4>
+          ))}
+        </div>
+      </div>
     ));
   };
 
@@ -79,18 +77,16 @@ const App: React.FC = () => {
   const renderRecordLabels = () => {
     const labelBandsMap: { [label: string]: Band[]; } = {};
 
-    if (festivals) {
-      festivals.forEach((festival) => {
-        festival.bands.forEach((band) => {
-          if (band.recordLabel) {
-            if (!labelBandsMap[band.recordLabel]) {
-              labelBandsMap[band.recordLabel] = [];
-            }
-            labelBandsMap[band.recordLabel].push(band);
+    festivals.forEach((festival) => {
+      festival.bands.forEach((band) => {
+        if (band.recordLabel) {
+          if (!labelBandsMap[band.recordLabel]) {
+            labelBandsMap[band.recordLabel] = [];
           }
-        });
+          labelBandsMap[band.recordLabel].push(band);
+        }
       });
-    }
+    });
 
     const sortedLabels = Object.keys(labelBandsMap).sort();
 
